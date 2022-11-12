@@ -64,22 +64,22 @@ namespace ADO
             }
 
         }
-        //public void Delete(string name)
-        //{
-        //    try
-        //    {
-        //        connection.Open();
-        //        SqlCommand cmd = new SqlCommand("delete from Employeedata where Empname='"+name+"'", connection);
-        //        cmd.ExecuteNonQuery();
-        //        Console.WriteLine("Record Deleted");
-        //        connection.Close();
+        public void Delete(string name)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("delete from Employeedata where Empname='" + name + "'", connection);
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Record Deleted");
+                connection.Close();
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
-        //}
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
         public void UpdateData(string name, string salary)
         {
             try

@@ -35,11 +35,11 @@ namespace ADO
 
                         employee.InsertRecord(name, salary, age);
                         break;
-                    //case 4:
-                    //    Console.WriteLine("enter name");
-                    //    string name1=Console.ReadLine();
-                    //    employee.Delete(name1);
-                    //        break;
+                    case 4:
+                        Console.WriteLine("enter name");
+                        string name1 = Console.ReadLine();
+                        employee.Delete(name1);
+                        break;
                     //case 5:
                     //    employee.RetriveData();
                     //    break;
