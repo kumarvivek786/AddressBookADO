@@ -25,45 +25,45 @@ namespace ADO
                     case 2:
                         employee.Createtable();
                        break;
-                    //case 3:
-                    //    Console.WriteLine("Enter name:");
-                    //    string name=Console.ReadLine();
-                    //    Console.WriteLine("Enter salary:");
-                    //    string salary = Console.ReadLine();
-                    //    Console.WriteLine("Enter age:");
-                    //    int age =Convert.ToInt32(Console.ReadLine());
+                    case 3:
+                        Console.WriteLine("Enter name:");
+                        string name = Console.ReadLine();
+                        Console.WriteLine("Enter salary:");
+                        string salary = Console.ReadLine();
+                        Console.WriteLine("Enter age:");
+                        int age = Convert.ToInt32(Console.ReadLine());
 
-                    //    employee.InsertRecord(name,salary, age);
-                    //    break;
-                    //case 4:
-                    //    Console.WriteLine("enter name");
-                    //    string name1=Console.ReadLine();
-                    //    employee.Delete(name1);
-                    //        break;
-                    //case 5:
-                    //    employee.RetriveData();
-                    //    break;
-                    //case 6:
-                    //    Console.WriteLine("enter name");
-                    //    string name2=Console.ReadLine();
-                    //    Console.WriteLine("enter salary");
-                    //    string salary2=Console.ReadLine();
-                    //    employee.UpdateData(name2, salary2);
-                    //    break;
-                    //case 7:
-                    //    Console.WriteLine("Enter name:");
-                    //    emp.Empname = Console.ReadLine();
-                    //    Console.WriteLine("Enter salary:");
-                    //    emp.salary = Convert.ToInt32(Console.ReadLine());
-                    //    Console.WriteLine("Enter age:");
-                    //   emp.Age = Convert.ToInt32(Console.ReadLine());
-                    //    employeeproc.InsertRecord(emp);
-                    //    break;
-                    //case 8:
-                    //    Console.WriteLine("Enter name:");
-                    //    string name4 = Console.ReadLine();
-                    //    employeeproc.delete(name4);
-                    //    break;
+                        employee.InsertRecord(name, salary, age);
+                        break;
+                        //case 4:
+                        //    Console.WriteLine("enter name");
+                        //    string name1=Console.ReadLine();
+                        //    employee.Delete(name1);
+                        //        break;
+                        //case 5:
+                        //    employee.RetriveData();
+                        //    break;
+                        //case 6:
+                        //    Console.WriteLine("enter name");
+                        //    string name2=Console.ReadLine();
+                        //    Console.WriteLine("enter salary");
+                        //    string salary2=Console.ReadLine();
+                        //    employee.UpdateData(name2, salary2);
+                        //    break;
+                        //case 7:
+                        //    Console.WriteLine("Enter name:");
+                        //    emp.Empname = Console.ReadLine();
+                        //    Console.WriteLine("Enter salary:");
+                        //    emp.salary = Convert.ToInt32(Console.ReadLine());
+                        //    Console.WriteLine("Enter age:");
+                        //   emp.Age = Convert.ToInt32(Console.ReadLine());
+                        //    employeeproc.InsertRecord(emp);
+                        //    break;
+                        //case 8:
+                        //    Console.WriteLine("Enter name:");
+                        //    string name4 = Console.ReadLine();
+                        //    employeeproc.delete(name4);
+                        //    break;
 
 
 
