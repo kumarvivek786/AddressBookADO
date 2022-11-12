@@ -40,9 +40,9 @@ namespace ADO
                         string name1 = Console.ReadLine();
                         employee.Delete(name1);
                         break;
-                    //case 5:
-                    //    employee.RetriveData();
-                    //    break;
+                    case 5:
+                        employee.RetriveData();
+                        break;
                     case 6:
                         Console.WriteLine("enter name");
                         string name2 = Console.ReadLine();

@@ -96,32 +96,32 @@ namespace ADO
                 Console.WriteLine(e.Message);
             }
         }
-        //public void RetriveData()
-        //{
-        //    try
-        //    {
-        //        connection.Open();
-        //        SqlCommand cmd = new SqlCommand("select * from Employeedata", connection);
-        //        SqlDataReader sdr = cmd.ExecuteReader();
-        //        while (sdr.Read())
-        //        {
-        //            var id = Convert.ToInt32(sdr["Empid"]);
-        //            string name = (string)sdr["Empname"];
-        //            string salary = (string)sdr["salary"];
-        //            var age = Convert.ToInt64(sdr["Age"]);
+        public void RetriveData()
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("select * from Employeedata", connection);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                while (sdr.Read())
+                {
+                    var id = Convert.ToInt32(sdr["Empid"]);
+                    string name = (string)sdr["Empname"];
+                    string salary = (string)sdr["salary"];
+                    var age = Convert.ToInt64(sdr["Age"]);
 
-        //            Console.WriteLine("Empid=" + id + "|" + "Empname=" + name + "|" + "salary=" + salary + "|" + "Age=" + age);
-        //        }
-        //        Console.WriteLine("Record retrived");
-        //        connection.Close();
+                    Console.WriteLine("Empid=" + id + "|" + "Empname=" + name + "|" + "salary=" + salary + "|" + "Age=" + age);
+                }
+                Console.WriteLine("Record retrived");
+                connection.Close();
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
-        //}
+        }
 
     }
 
