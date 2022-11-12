@@ -47,23 +47,23 @@ namespace ADO
             }
 
         }
-        //public void InsertRecord(string name, string salary, int age)
-        //{
-        //    try
-        //    {
-        //        connection.Open();
-        //        SqlCommand cmd = new SqlCommand("insert into Employeedata values('" + name + "','" + salary + "'," + age + ")", connection);
-        //        cmd.ExecuteNonQuery();
-        //        Console.WriteLine("Record Inserted");
-        //        connection.Close();
+        public void InsertRecord(string name, string salary, int age)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("insert into Employeedata values('" + name + "','" + salary + "'," + age + ")", connection);
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Record Inserted");
+                connection.Close();
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
-        //}
+        }
         //public void Delete(string name)
         //{
         //    try
@@ -80,22 +80,22 @@ namespace ADO
         //        Console.WriteLine(e.Message);
         //    }
         //}
-        //public void UpdateData(string name,string salary)
-        //{
-        //    try
-        //    {
-        //        connection.Open();
-        //        SqlCommand cmd = new SqlCommand("update Employeedata set salary='" +salary+"'where Empname='"+name+"'", connection);
-        //        cmd.ExecuteNonQuery();
-        //        Console.WriteLine("Record Updated");
-        //        connection.Close();
+        public void UpdateData(string name, string salary)
+        {
+            try
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("update Employeedata set salary='" + salary + "'where Empname='" + name + "'", connection);
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Record Updated");
+                connection.Close();
 
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
-        //}
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
         //public void RetriveData()
         //{
         //    try
