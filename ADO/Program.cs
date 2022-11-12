@@ -22,9 +22,9 @@ namespace ADO
                     case 1:
                         employee.createDatabase();
                         break;
-                    //case 2:
-                    //    employee.Createtable();
-                    //    break;
+                    case 2:
+                        employee.Createtable();
+                       break;
                     //case 3:
                     //    Console.WriteLine("Enter name:");
                     //    string name=Console.ReadLine();

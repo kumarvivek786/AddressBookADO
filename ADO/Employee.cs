@@ -30,29 +30,29 @@ namespace ADO
         }
         public SqlConnection connection = new SqlConnection(@"Data Source=.;
                 Initial Catalog=Employee;Integrated Security=true");
-        //public void Createtable()
-        //{
-        //    try
-        //    {
-                
-        //        connection.Open();
-        //        SqlCommand cmd = new SqlCommand("create Table Employeedata(Empid int identity(1,1) primary key,Empname varchar(200),salary varchar(200),Age int)", connection);
-        //        cmd.ExecuteNonQuery();
-        //        Console.WriteLine("Employee Table created");
-        //        connection.Close();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //    }
+        public void Createtable()
+        {
+            try
+            {
 
-        //}
-        //public void InsertRecord(string name,string salary, int age)
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("create Table Employeedata(Empid int identity(1,1) primary key,Empname varchar(200),salary varchar(200),Age int)", connection);
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Employee Table created");
+                connection.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+        }
+        //public void InsertRecord(string name, string salary, int age)
         //{
         //    try
         //    {
         //        connection.Open();
-        //        SqlCommand cmd = new SqlCommand("insert into Employeedata values('"+name+"','"+salary+"',"+age+")",connection);
+        //        SqlCommand cmd = new SqlCommand("insert into Employeedata values('" + name + "','" + salary + "'," + age + ")", connection);
         //        cmd.ExecuteNonQuery();
         //        Console.WriteLine("Record Inserted");
         //        connection.Close();
@@ -122,7 +122,7 @@ namespace ADO
         //    }
 
         //}
-        
+
     }
 
 }
